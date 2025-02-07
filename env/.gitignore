@@ -1,0 +1,18 @@
+# Python
+*.py[cod]
+gen-py
+__pycache__/
+
+# IDE
+.idea/
+.vscode/
+
+# FE
+node_modules/
+#dist/
+
+# Mac
+.DS_Store
+
+# Vim
+.*.sw*

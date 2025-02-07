@@ -1,0 +1,27 @@
+[core]
+    autocrlf = false
+    excludesfile=~/.gitignore
+[color]
+    diff = auto
+    status = auto
+    branch = auto
+    interactive = auto
+    ui = true
+[alias]
+    co = checkout
+    br = branch
+    ci = commit
+    st = status
+    di = diff
+    cp = cherry-pick
+    rh = reset HEAD
+    dic = diff --cached
+    mg = merge --no-ff
+    rs = restore --staged
+    brs = remote update origin --prune
+    lp = log --abbrev-commit --pretty=oneline
+    cia = commit --amend
+    cin = commit --amend --no-edit
+    delbr = "!f() { git branch -D ${1}; }; f"
+    # 删除远程分支
+    delrb= "!f() { git push origin --delete ${1}; }; f"
